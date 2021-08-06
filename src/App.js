@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import FruitList from './components/FruitList';
+import SayHello from './components/SayHello';
+import Header from './components/header';
+import Timer from './components/Timer';
 
 function App() {
+
+  let name = 'geeta';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello world</h1>
+      <SayHello name={name}/>
+      <FruitList fruits={['Apple','Mango','Banana']}/>
+      <Header name='geeta'/>
+      <Timer />
     </div>
   );
 }
